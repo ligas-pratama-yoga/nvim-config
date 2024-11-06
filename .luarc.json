@@ -1,0 +1,10 @@
+{
+    "diagnostics.disable": [
+        "unused-local",
+        "undefined-global"
+    ],
+    "diagnostics.globals": [
+        "vim",
+        "sql_ft"
+    ]
+}
