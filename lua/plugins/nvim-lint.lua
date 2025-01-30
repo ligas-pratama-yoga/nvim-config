@@ -7,7 +7,7 @@ return {
 	config = function()
 		local lint = require("lint")
 
-		lint.linters_by_ft = {
+		lint.linters_by_f = {
 			javascript = { "eslint_d" },
 			css = { "stylelint" },
 			php = { "phpstan" },

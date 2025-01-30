@@ -115,7 +115,6 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		event = { "BufReadPre", "BufNewFile" },
-		enabled = false,
 		dependencies = {
 			"hrsh7th/cmp-nvim-lsp",
 			{ "antosha417/nvim-lsp-file-operations", config = true },
@@ -175,7 +174,7 @@ return {
 				on_attach = on_attach,
 			})
 			lspconfig["emmet_language_server"].setup({
-				filetypes = { "html", "css", "blade" },
+				filetypes = { "html", "css", "blade", "php" },
 				capabilities = capabilities,
 				on_attach = on_attach,
 			})
@@ -215,6 +214,11 @@ return {
 						},
 					},
 				},
+			})
+
+			lspconfig["gopls"].setup({
+				capabilities = capabilities,
+				on_attach = on_attach,
 			})
 			vim.lsp.handlers["textDocument/publishDiagnostics"] =
 				vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {

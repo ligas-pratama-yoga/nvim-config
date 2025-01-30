@@ -2,6 +2,7 @@ return {
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.8",
+    enabled = false,
 		dependencies = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons" },
 		config = function()
 			local builtin = require("telescope.builtin")
@@ -33,8 +34,8 @@ return {
 			require("telescope").load_extension("file_browser")
 		end,
 	},
-	{ "nvim-telescope/telescope-ui-select.nvim" },
-	{
-		"nvim-telescope/telescope-file-browser.nvim",
-	},
+	-- { "nvim-telescope/telescope-ui-select.nvim" },
+	-- {
+	-- 	"nvim-telescope/telescope-file-browser.nvim",
+	-- },
 }

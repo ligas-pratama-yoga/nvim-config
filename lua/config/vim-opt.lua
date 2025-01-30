@@ -31,7 +31,6 @@ map("i", "jj", "<esc>", { desc = "Quit Insert Mode", silent = true, noremap = tr
 -- Buffer
 map("n", "H", "<cmd>bprev<cr>", { desc = "Previous buffer" })
 map("n", "L", "<cmd>bnext<cr>", { desc = "Next buffer" })
-map("n", "<leader>bd", "<cmd>bdelete<cr>", { desc = "Next delete" })
 
 -- Clear search with <esc>
 map({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Escape and Clear hlsearch" })

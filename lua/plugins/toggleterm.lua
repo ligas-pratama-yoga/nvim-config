@@ -1,5 +1,6 @@
 return {
   "akinsho/toggleterm.nvim",
+  enabled = false,
   version = "*",
   opts = {
     autochdir = true,
@@ -10,3 +11,5 @@ return {
     vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<cr>", { desc = "ToggleTerm" })
   end,
 }
+
+

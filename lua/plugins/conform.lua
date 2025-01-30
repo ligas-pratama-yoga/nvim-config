@@ -57,6 +57,7 @@ return {
 				blade = { "blade-formatter" },
 				java = { "clang-format" },
 				php = { "php_cs_fixer" },
+				go = { "goimports" },
 			},
 			format_on_save = {
 				-- These options will be passed to conform.format()
